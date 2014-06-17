@@ -1,0 +1,13 @@
+{
+  "name": "mywebsite",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.0.2",
+    "mustache": "~0.8.1"
+  }
+}

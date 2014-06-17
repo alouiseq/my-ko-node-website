@@ -1,0 +1,51 @@
+blogs = {
+  "mar2014": [
+    {
+      latest: "latest",
+      topic: "March Madness",
+      date: "March 28, 2014",
+      post: "It's been awhile since I posted as I've been quite busy. My daughter Alyssa just had her first birthday last weekend. Shout out to my baby girl!<br/><br/>For the last month, I've created another website for my family through Wordpress (<a href='http://thequiatchons.com' target='_blank' title='Family Site'>click here</a> to view)<br/><br/>I've also just completed the Django tutorial that can be found on their <a href='https://djangoproject.com' title='Django' target='_blank'>website</a>. It helped me jumpstart my transition from static to a more dynamic website. This blog you're reading now (along with all the previous blogs) is stored in a Postgre database through Django's API. I've also transferred my website to Heroku (previously hosted on <a href='https://www.nearlyfreespeech.net/' target='_blank' title='Nearlyfreespeech'>nearlyfreespeech.net</a>), a PAAS technology, to develop and deploy my Python/Django web application.<br/><br/>Also, I've read up and gone through a simple tutorial on Angular.js. As I explore and look for other MV* Javascript frameworks, I'll probably do some reading on Backbone.js, Knockout.js, Ember.js and whatever else is currently available that will be more suited for a couple of applications I have in mind.<br/><br/>To stay up to date with C/C++ (due to my short term memory), I'm also doing some reading on a couple of books (listed below) whenever I can find time:<br/><br/><pre>- Cracking the Coding Interview by Gayle McDowell<br/>- Programming Interviews Exposed by John Mongan, et al</pre><br/>Lastly, I'll probably create a couple of tutorial videos (or blogs) regarding static pages with Django and hosting with Heroku to hopefully save some of you time with the process so stay tuned."
+    }
+  ],
+  "feb2014": [
+    {
+      topic: "Static Website",
+      date: "February 25, 2014",
+      post: "I've completed my very first website using static pages! I'm now working on moving my website into Django (Python web framework) for dynamic page scalability."
+    },
+    {
+      topic: "Sticky footer and Heroku",
+      date: "February 19, 2014",
+      post: "I just learned about CSS positioning and have applied it to creating a sticky footer. I'm also currently learning about Heroku to be able to host my website using Django."
+    },
+    {
+      topic: "Code Optimization",
+      date: "February 8, 2014", 
+      post: "I'm currently going through my code to optimize it. I'm removing excess div tags and placing repeated code into functions. I'm also thinking about redesigning my web pages. <span style='color:green;'>(tools: HTML, CSS, JavaScript, jQuery, mustache.js, Twitter Bootstrap)</span>"
+    }
+  ],
+  "jan2014": [
+    {
+      topic: "Django Project",
+      date: "January 20, 2014",
+      post: "Next on my plate is to go through the Django tutorial to be able to implement a Sports page and Photo Album page that require a database and a back-end engine to communicate with the database.<br/><br/>In fact, all data that are currently stored in text files would be transferred to the database."
+    },
+    {
+      topic: "Twitter Bootstrap and Django",
+      date: "January 10, 2014",
+      post: "I'm looking to improve the overall look of my website through Twitter Bootstrap. It really does save a ton of time! <span style='color:green;'>(tools: HTML, CSS, JavaScript, jQuery, mustache.js, <span style='color:red;font-size:1em'>Twitter Bootstrap</span>)</span><br/><br/>Go through Django tutorial to implement the Django framework to utilize Python and a specific database (currently sqlite since this is Django's default)."
+    }
+  ],
+  "dec2013": [
+    {
+      topic: "Christmas Right Around the Corner",
+      date: "December 18, 2013",
+      post: "In light of the holiday spirits this year, I have created several  e-card videos for my families to enjoy via <a href='http://jibjab.com' target='_blank'>jibjab.com.</a> <span style='color:green;'>(tools: HTML, CSS, JavaScript, jQuery, mustache.js)</span>"
+    },
+    {
+      topic: "What is this website?",
+      date: "December 01, 2013",
+      post: "I am currently building this website as a portfolio for projects and tasks I have worked on, as well as any future endeavors."
+    }
+  ]
+}

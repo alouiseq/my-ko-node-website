@@ -1,0 +1,54 @@
+extends pf_layout
+
+block content
+  div(class="masthead")
+    div(class="container")
+      nav(id="Portfolio", class="blog-nav")
+
+  div(class="container pfolio")
+    div(class="row")
+      div(class="nav-buttons")
+        input(class="work", type="radio", name="radio-nav", checked)
+        br
+        input(class="resum", type="radio", name="radio-nav")
+      div(id="work")
+        h1 Previous Work
+        div(id="lg-img", class="col-lg-12")
+      div(id="resume")
+        h1(id="resum") Resume
+        div(class="left")
+          h4 EMPLOYMENT
+          pre
+            <strong>Technical Operations Lead	Google		October 2012 – Present</strong>
+            | • Create an automation data-mining tool to upload 1500+ legacy data into existing site management tools using Python via protocol buffers and remote procedure calls to increase operator productivity by 50%. <a href="https://github.com/alouiseq/data-mining-tool" target="_blank">SAMPLE</a>
+            | • Process over 1000 panoramic image data from beginning stages to Google Maps street view launch.
+            | • Perform quality control, debug geometry misalignments of image data, and communicate with various teams ranging from 10-20 operators and project managers worldwide.<br />
+            <strong>Software Engineer Co-Op      Cisco Systems      June 2011 – July 2012</strong>
+            | • Implemented 65% of “Design Tracker” interactive web automation tool currently in use by a team of 20-30 engineers and project managers to track equipment valued at $100k+. <a href="https://github.com/alouiseq/design-tracker" target="_blank">SAMPLE</a>
+            | • Designed a status web tool to record individual work updates and generate status reports to increase project updates visibility across 2-5 teams.
+            | • Configured IOS systems, run diagnostics, bring-up, and debug hardware failures on 500+ various core routing components to reduce equipment costs by %10. <a href="https://github.com/alouiseq/status-tool" target="_blank">SAMPLE</a><br />
+            <strong>Digital Design Lab TA     San Jose State University     September 2010 – May 2011</strong>
+            | • Provided guidance to a group of 30+ students and increased project completion rates of over 20% through digital design projects using Verilog HDL tested via FPGA prototyping and ModelSim simulations.
+
+          h4 EDUCATION
+          pre
+            <strong>San Jose, CA	San Jose State University	Fall 2007 – May 2012/strong)</strong>
+            | • M.S. in Computer Engineering and Network Systems, May 2012. 
+            | • B.S. in Computer Engineering, May 2012.     (Combined GPA: 3.5)
+
+            | • em)Relevant Coursework/em): Object Oriented Programming, Database, Data Structures & Algorithms, Operating Systems, Computer Networking Concepts, TCP/IP Socket Programming, Computer Architecture
+
+          h4 TECHNICAL EXPERIENCE
+          pre
+            <strong>Projects</strong>
+            | • Personal Website (2014).  Project portfolio and autobiography website. HTML, CSS, JavaScript, jQuery, mustache.js, Twitter Bootstrap <a href="https://github.com/alouiseq/mysite" target="_blank">SAMPLE</a>
+            | • Space Duel: 2D Game (2013). Two-player battle game with GUI. Python, Pygame <a href="https://github.com/alouiseq/space-duel" target="_blank">SAMPLE</a>
+            | • Remote Controlled Web TV (2012). Stand-alone device that allows users to stream audio/video from the Internet with a click of a button. Perl, LIRC<br />
+            <strong>Languages and Technologies</strong>
+            | • Python; Pygame; Git; C; C++; Shell Scripting (prior knowledge);
+            | • HTML; CSS; JavaScript; jQuery; mustache.js; Twitter Bootstrap;
+            | • Visual Studio; Eclipse; Vim; Windows; Mac; Linux; Unix-like OS;
+
+  div(class="footer")
+    div(class="blog-nav")
+    p(id="copyright") &#169;

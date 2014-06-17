@@ -1,0 +1,72 @@
+extends layout
+
+block content
+  body(class="home")
+    div(class="container grids")
+      div(id="myname")
+      br
+      div(id="masked")
+        svg(class="transform", xmlns="http://www.w3.org/TR/SVG/", xmlns:xlink="http://www.w3.org/TR/xlink/", width="100%") 
+          image(xlink:href="/img/ironman.png", width="100%", height="100%")
+          mask(id="mask1")
+            circle(cx="-50%", cy="-50%", r="50", fill="white")
+          image(xlink:href="/img/me-ironman.png", mask="url(#mask1)", width="100%", height="100%")
+
+      div(class="image_set")
+        div(class="row")
+          div(id="l1", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-left")
+            p(class="plain") Alouise Quiatchon
+              br
+              | Web Developer
+            img(id="me", class="img-rounded", height="200", width="200", src="/img/Alouise2.jpg", alt="Me")
+          div(id="m1", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-middle")
+            a(href="projects")
+              p(class="animate")
+                strong Projects
+              img(class="img-rounded", height="200", width="200", src="/img/chip.jpg", alt="Projects")
+          div(id="r1", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-right")
+            a(href="portfolio")
+              p(class="animate")
+                strong Portfolio
+              img(class="img-rounded", height="200", width="200", src="/img/portfolio.jpg", alt="Portfolio")
+
+        div(class="row")
+          div(id="l2", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-left")
+            p(id="google", class="plain") @ Google
+              br
+              | Tech Ops Lead
+            img(class="img-rounded", height="200", width="200", src="/img/pegman.jpg", alt="Pegman")
+          div(id="m2", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-middle")
+            a(href="blog")
+              p(class="animate")
+                strong Blog
+              img(class="img-rounded", height="200", width="200", src="/img/blog.jpg", alt="Blog")
+          div(id="r2", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-right")
+            a(href="contacts")
+              p(class="animate")
+                strong Contact Me
+              img(class="img-rounded", height="200", width="200", src="/img/call.jpg", alt="Contact Me")
+
+        div(class="row")
+          div(id="l3", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-left")
+            p(class="plain") When I'm not writing code, I'm very active and I enjoy watching sports & movies.
+            img(class="img-rounded", height="200", width="200", src="/img/world.jpg", alt="Available Slot")
+          div(id="m3", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-middle")
+            a(href="http://thequiatchons.com/videos", target="_blank")
+              p(class="animate")
+                strong Videos
+              img(class="img-rounded", height="200", width="200", src="/img/videos.jpg", alt="Videos")
+          div(id="r3", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-right")
+            a(href="http://thequiatchons.com/photo-gallery/", target="_blank")
+              p(class="animate")
+                strong Photo Album
+              img(class="img-rounded", height="200", width="200", src="/img/album.jpg", alt="Album")
+      hr
+
+    div(class="footer")
+      p(id="copyright") Content &#169;
+      p(class="css-validated")
+        a(href="http://jigsaw.w3.org/css-validator/check/referer")
+          img(style="border:0;width:88px;height:31px",
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue",
+            alt="Valid CSS!")

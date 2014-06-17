@@ -1,0 +1,20 @@
+doctype html5 
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='/components/bootstrap-sass/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/others/easybox/styles/default/easybox.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='http://localhost:35729/livereload.js')
+  body
+    block content
+    script(src='/components/jquery/dist/jquery.min.js')
+    script(src='/components/mustache/mustache.js')
+    script(src='/others/easybox/distrib.min.js')
+    script(src='/others/easybox/easybox.min.js')
+    script(src='/others/easybox/handlers.min.js')
+    script(src='/others/easybox/extras/autoload.min.js')
+
+    script(src='/js/template.js')
+    script(src='/js/portfolio.js')

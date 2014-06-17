@@ -1,0 +1,1 @@
+msg = "If you have any web development questions, programming, or just want to chat, feel free to contact me via the form below:"

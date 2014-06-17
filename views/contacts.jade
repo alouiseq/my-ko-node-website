@@ -1,0 +1,35 @@
+extends contacts_layout
+
+block content
+  body
+    div(class="masthead")
+      div(class="container")
+        nav(id="Contact", class="blog-nav")
+
+    div(class="container contact")
+      div(class="head-msg")
+        h1 Contact Me
+      div(class="main-msg")
+        h3(id="msg")
+      div(class="form-msg")
+        form(action='/email', method='POST')
+          label(for='name') Name:
+          br
+          input(id="name", class="field", type="text", name='name', maxlength='40', required)
+          br
+          br
+          label(for='sender') Email:
+          br
+          input(id='sender', class="field", type="text", name='sender', pattern='[a-zA-Z0-9]+@[a-zA-Z]+.com', required)
+          br
+          br
+          label(for='message') Comment:
+          br
+          textarea(id='message', class="field", name='message', required)
+          br
+          br
+          input(type="submit", value="Submit")
+ 
+    div(class="footer")
+      div(class="blog-nav")
+      p(id="copyright") &#169;

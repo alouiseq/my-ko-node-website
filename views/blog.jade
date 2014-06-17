@@ -1,0 +1,17 @@
+extends blog_layout
+
+block content
+  div(class="masthead")
+    div(class="container")
+      nav(id="Blog", class="blog-nav")
+
+  div(class="container")
+    div(class="row shrink")
+      div(class="col-sm-8 blog-main")
+      div(class="col-sm-3 col-sm-offset-1 blog-sidebar")
+        h4(id="archives", class="titles") Archives
+        ol(class="list-unstyled", id="dates")
+
+  div(class="footer")
+    div(class="blog-nav")
+    p(id="copyright") &#169;

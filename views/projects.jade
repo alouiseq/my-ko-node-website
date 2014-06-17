@@ -1,0 +1,36 @@
+extends proj_layout
+
+block content
+  body
+    div(class="masthead")
+      div(class="container")
+        nav(id="Projects", class="blog-nav")
+
+    div(class="container proj")
+      div(class="row hr-min")
+        div(id="work")
+          h1 Latest Work
+
+      div(class="row featurette")
+        div(id="mysite", class="col-md-7")
+          h2(class="featurette-heading")
+            span(class="text-muted")
+          p(class="lead") Testing in this area.
+        div(class="col-md-5")
+          img(class="featurette-image img-responsive", src='/img/mysite.png', alt="My website")
+
+      hr(class="featurette-divider")
+
+      div(class="row featurette")
+        div(class="col-md-5")
+          img(class="featurette-image img-responsive", src='/img/familysite.png', alt="My family's website")
+        div(id="familySite", class="col-md-7")
+          h2(class="featurette-heading")
+            span(class="text-muted")
+          p(class="lead") Testing in this area.
+
+      hr(class="featurette-divider")
+
+    div(class="footer")
+      div(class="blog-nav")
+      p(id="copyright") &#169;

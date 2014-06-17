@@ -1,0 +1,54 @@
+{
+  "myname": "Alouise Quiatchon",
+  "description": "Web Developer",
+  "brand": "AQ",
+  "img_width": "100%",
+  "img_height": "360em",
+  "copyright": " 2014 Alouise Quiatchon.",
+  "info": [
+    {
+      "url": "/",
+      "name": "Home"
+    },
+    {
+      "url": "/blog",
+      "name": "Blog"
+    },
+    {
+      "url": "/portfolio",
+      "name": "Portfolio"
+    },
+    {
+      "url": "/projects",
+      "name": "Projects"
+    },
+    {
+      "url": "/contacts",
+      "name": "Contact Me"
+    }
+  ],
+  "latest_work": [
+    {
+      "title": "Personal_Website",
+      "image": "img/mysite.png"
+    }
+  ],
+  "prior_work": [
+    {
+      "title": "Data_Miner",
+      "image": "/img/tool.png"
+    },
+    {
+      "title": "Space_Duel_2D",
+      "image": "/img/space_duel_2.png"
+    },
+    {
+      "title": "Status_Tool",
+      "image": "/img/statustool.png"
+    },
+    {
+      "title": "Design_Tracker",
+      "image": "/img/dtracker.png"
+    }
+  ]
+}  

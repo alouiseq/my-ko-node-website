@@ -1,0 +1,11 @@
+mysite = {
+  title: "Personal website.",
+  meta: "First published website.",
+  synopsis: "A site powered by Bootstrap 3 and written in HTML, CSS, jQuery, and mustache.js is a simple but elegant presentation of the owner's web development experience."
+}
+
+familySite = {
+  title: "Family website.",
+  meta: "Under construction.",
+  synopsis: "A website powered by Wordpress and designed to display beautiful family photos and videos. Modified CSS stylesheet through the Wordpress UI."
+}
