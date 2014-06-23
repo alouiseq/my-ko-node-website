@@ -10,7 +10,8 @@
     "jade": "~0.34.0",
     "mongodb": "*",
     "mongoskin": "*",
-    "nodemailer": "^0.6.5"
+    "nodemailer": "^0.7.0",
+    "todos": "git+ssh://git@github.com:alouiseq/to-dos.git#master"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

@@ -1,11 +1,17 @@
+todos = {
+  title: "To Dos. ",
+  meta: "Simple To Dos App.",
+  synopsis: "A to do list SPA application with daily tasks and projects lists to add, remove, edit, and sort entries in a simple and transparent fashion. A RESTful app that is driven by Javascript, jQuery, and Knockout.js on the client side, and Javascript, node.js, Express.js, and MongoDB on the server side. Markup includes HTML5 and CSS3 with Sass and Bootstrap."
+}
+
 mysite = {
-  title: "Personal website.",
+  title: "Personal website. ",
   meta: "First published website.",
-  synopsis: "A site powered by Bootstrap 3 and written in HTML, CSS, jQuery, and mustache.js is a simple but elegant presentation of the owner's web development experience."
+  synopsis: "A site powered by Bootstrap 3 and written in HTML, CSS, jQuery, and mustache.js is a simple but elegant presentation of the owner's web development experience. Originally a Django implementation, now converted to node.js via Express.js framework. Workflow include Yeoman, Grunt, and Bower."
 }
 
 familySite = {
-  title: "Family website.",
+  title: "Family website. ",
   meta: "Under construction.",
   synopsis: "A website powered by Wordpress and designed to display beautiful family photos and videos. Modified CSS stylesheet through the Wordpress UI."
 }

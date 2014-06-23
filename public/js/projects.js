@@ -1,3 +1,8 @@
+var proj_mysite = $("#todos");
+proj_mysite.find("h2").prepend(todos.title);
+proj_mysite.find("span").text(todos.meta);
+proj_mysite.find("p").text(todos.synopsis);
+
 var proj_mysite = $("#mysite");
 proj_mysite.find("h2").prepend(mysite.title);
 proj_mysite.find("span").text(mysite.meta);
