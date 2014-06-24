@@ -7,9 +7,8 @@ var express = require('express'),
     http = require('http'),
     path = require('path');
 
-// Load Database
 var mongo = require('mongoskin'),
-    db = mongo.db('mongodb://localhost:27017/mysite', {native_parser:true});
+    db = mongo.db('mongodb://localhost:27017/mysite', {native_parser:true}); 
 
 var app = express();
 module.exports = app;
@@ -38,9 +37,8 @@ app.configure('development', function(){
 require('./routes');
 
 // Load todos here
-//var todos = require('../todos/app');
-//var todos = require('todos');
-//app.use('/todos', todos);
+var todos = require('./lib/todosMod/');
+app.use(todos);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

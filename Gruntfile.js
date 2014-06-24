@@ -25,18 +25,19 @@ module.exports = function (grunt) {
       server: {
         files: [
           'app.js',
-          'routes/*.js'
+          'routes/*.js',
+          'lib/todosMod/index.js'
         ],
         tasks: ['develop', 'delayed-livereload']
       },
       js: {
-        files: ['public/js/*.js'],
+        files: ['public/js/*.js', 'lib/todosMod/**/*.js'],
         options: {
           livereload: reloadPort
         }
       },
       css: {
-        files: ['public/css/*.css'],
+        files: ['public/css/*.css', 'lib/todosMod/public/css/*.css'],
         options: {
           livereload: reloadPort
         }
