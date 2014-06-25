@@ -7,11 +7,14 @@ var express = require('express'),
     http = require('http'),
     path = require('path');
 
-var mongo = require('mongoskin'),
-    db = mongo.db('mongodb://localhost:27017/mysite', {native_parser:true}); 
+// Load Database
+var mongo = require('mongoskin');
+var mongoUri = process.env.MONGOLAB_URI || 
+    process.env.MONGOHQ_URL ||
+    'mongodb://localhost:27017/mysite';
 
-var app = express();
-module.exports = app;
+var db = mongo.db(mongoUri, {native_parser:true}); 
+var app = module.exports = express();
 
 app.use(function(req, res, next) {
   req.db = db;
