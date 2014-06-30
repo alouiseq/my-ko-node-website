@@ -3,13 +3,24 @@ html(lang='en')
   head
     title= title
     meta(charset='utf-8')
-    link(rel='stylesheet', href='/components/bootstrap-sass/dist/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/style.css')
-    script(src='http://localhost:35729/livereload.js')
+    if settings.env === 'development'
+      //-<!-- build:css dist/css/contacts_styles.min.css -->
+      link(rel='stylesheet', href='public/components/bootstrap-sass/dist/css/bootstrap.min.css')
+      link(rel='stylesheet', href='public/css/style.css')
+      //-<!-- endbuild -->
+    else
+      link(rel='stylesheet', href='dist/css/contacts_styles.min.css')
+    if settings.env === 'development'
+      script(src='http://localhost:35729/livereload.js')
   body
     block content
-    script(src='/components/jquery/dist/jquery.min.js')
-    script(src='/components/mustache/mustache.js')
-    script(src='/js/template.js')
-    script(src='/texts/contacts.txt')
-    script(src='/js/contacts.js')
+    if settings.env === 'development'
+      //-<!-- build:js dist/js/contacts_scripts.min.js -->
+      script(src='public/components/jquery/dist/jquery.min.js')
+      script(src='public/components/mustache/mustache.js')
+      script(src='public/js/template.js')
+      script(src='public/texts/contacts.txt')
+      script(src='public/js/contacts.js')
+      //-<!-- endbuild -->
+   else
+      script(src='dist/js/contacts_scripts.min.js');

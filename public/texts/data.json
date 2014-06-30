@@ -30,25 +30,25 @@
   "latest_work": [
     {
       "title": "Personal_Website",
-      "image": "img/mysite.png"
+      "image": "public/img/mysite.png"
     }
   ],
   "prior_work": [
     {
       "title": "Data_Miner",
-      "image": "/img/tool.png"
+      "image": "public/img/tool.png"
     },
     {
       "title": "Space_Duel_2D",
-      "image": "/img/space_duel_2.png"
+      "image": "public/img/space_duel_2.png"
     },
     {
       "title": "Status_Tool",
-      "image": "/img/statustool.png"
+      "image": "public/img/statustool.png"
     },
     {
       "title": "Design_Tracker",
-      "image": "/img/dtracker.png"
+      "image": "public/img/dtracker.png"
     }
   ]
 }  

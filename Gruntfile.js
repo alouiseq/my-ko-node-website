@@ -48,6 +48,35 @@ module.exports = function (grunt) {
           livereload: reloadPort
         }
       }
+    },
+    jadeUsemin: {
+      scripts: {
+	options: {
+	  tasks: {
+	    js: ['concat', 'uglify'],
+	    css: ['concat', 'cssmin']
+	  }
+	},
+	files: [{
+	  src: [
+            './views/layout.jade', 
+            './views/blog_layout.jade', 
+            './views/pf_layout.jade', 
+            './views/proj_layout.jade', 
+            './views/contacts_layout.jade'
+          ]
+	}]
+      }
+    },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'public/img/',
+          src: ['*.{png,jpg,gif}'],
+          dest: 'dist/images/'
+        }]
+      }
     }
   });
 
@@ -71,4 +100,5 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', ['develop', 'watch']);
+  grunt.registerTask('build', ['jadeUsemin', 'newer:imagemin']);
 };

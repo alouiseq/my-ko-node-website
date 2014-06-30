@@ -1,5 +1,5 @@
 
-$.getJSON('/texts/data.json', function(data){
+$.getJSON('/public/texts/data.json', function(data){
   /************* GLOBAL *****************/
   // page tabs
   var template = "{{#info}}<a class='blog-nav-item' href={{url}}>{{name}}</a>{{/info}}";

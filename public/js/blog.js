@@ -6,9 +6,9 @@ function retrieveBlogs(blog_sets) {
       long_date;
 
   // read blogs from file
-  for(date_view in blogs){
+  for (var date_view in blogs){
     month_yr = blogs[date_view];
-    if(month_yr[0].latest in month_yr[0]) {
+    if (month_yr[0].latest in month_yr[0]) {
       latest_blogs[date_view] = month_yr;
     }
     // Add dates into Archives section
@@ -18,7 +18,7 @@ function retrieveBlogs(blog_sets) {
   }
   blog_sets.all = blogs;
   return latest_blogs;
-};
+}
 
 function outputBlogs(myblogs){
   var blog = $(".blog-main"),
@@ -65,12 +65,12 @@ $("#"+newest).addClass("spotlight");
 $("a").click(function(){
   var val = $(this).attr("id");
 
-  if(val != undefined){
-    for(date_id in all_blogs){
-      if(val === date_id){
+  if (val !== undefined){
+    for (var date_id in all_blogs) {
+      if (val === date_id) {
 	$("#"+val).addClass("spotlight");
       }
-      else{
+      else {
 	$("#"+date_id).removeClass("spotlight");
       }
     }
