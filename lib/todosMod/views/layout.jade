@@ -3,10 +3,11 @@ html(lang='en')
   head
     title= title
     meta(charset='utf-8')
-    link(rel='icon', href='public/img/todos.jpeg')
+    link(rel='icon', href='publicTodos/img/todos.jpeg')
     if settings.env === 'development'
       //-<!-- build:css dist/styles/main.min.css -->
-      link(rel='stylesheet', href='public/css/bootstrap.css')
+      link(rel='stylesheet', href='publicTodos/css/bootstrap.css')
+      link(rel='stylesheet', href='publicTodos/css/style.css')
       link(rel='stylesheet', href='public/css/style.css')
       //-<!-- endbuild -->
     else
@@ -14,13 +15,16 @@ html(lang='en')
     script(src='http://localhost:35729/livereload.js')
   body
     block content
-    script(src='public/components/jquery/dist/jquery.min.js')
-    script(src='public/components/jquery-ui/ui/minified/jquery-ui.min.js')
-    script(src='public/components/jquery-ui/ui/minified/jquery.ui.sortable.min.js')
-    script(src='public/components/knockoutjs/dist/knockout.js')
+    script(src='publicTodos/components/jquery/dist/jquery.min.js')
+    script(src='publicTodos/components/jquery-ui/ui/minified/jquery-ui.min.js')
+    script(src='publicTodos/components/jquery-ui/ui/minified/jquery.ui.sortable.min.js')
+    script(src='publicTodos/components/knockoutjs/dist/knockout.js')
+    script(src='public/components/mustache/mustache.js')
+    script(src='public/js/template.js')
+
     if settings.env === 'development'
       //-<!-- build:js dist/scripts/todos.min.js -->
-      script(src='public/js/todos.js')
+      script(src='publicTodos/js/todos.js')
       //-<!-- endbuild -->
     else
       script(src='dist/scripts/todos.min.js')

@@ -1,0 +1,71 @@
+// HTML5 elements for non-supported browsers 
+header, footer, section, article, aside, nav, hgroup {
+  display: block;
+}
+
+html {
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+}
+
+// flex direction
+@mixin direction($dir) {
+  flex-direction: $dir;
+  -webkit-flex-direction: $dir;
+  -ms-flex-direction: $dir;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    @include direction(column);
+  } 
+}
+
+// flex grow
+@mixin expand($ratio) {
+  flex-grow: $ratio;
+  -webkit-flex-grow: $ratio;
+  -ms-flex-grow: $ratio;
+}
+
+.list {
+  @include expand(1);
+  min-width: 50%;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+h1 {
+  font-family: cursive, sans-serif;
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  -moz-text-decoration-color: red;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+}
+
+footer {
+  div {
+    margin-left: -50%;
+  }
+}
