@@ -1,0 +1,38 @@
+{
+  "name": "mywebsite",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "~3.3.4",
+    "jade": "~0.34.0",
+    "mongodb": "*",
+    "mongoskin": "*",
+    "nodemailer": "^0.7.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-develop": "~0.2.2",
+    "grunt-jade-usemin": "^0.5.5",
+    "load-grunt-tasks": "~0.2.0",
+    "request": "~2.27.0",
+    "time-grunt": "~0.1.1",
+<<<<<<< HEAD
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-imagemin": "^0.7.1",
+    "grunt-jade-usemin": "^0.5.5",
+=======
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-imagemin": "^0.7.1",
+>>>>>>> 92bc3c800bf6acfb666ad8c69833567bce150976
+    "grunt-newer": "^0.7.0"
+  }
+}
