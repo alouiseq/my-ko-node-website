@@ -3,20 +3,21 @@ html(lang='en')
   head
     title= title
     meta(charset='utf-8')
-    if settings.env === 'development'
+    if process.env.NODE_ENV === 'production'
+      link(rel='stylesheet', href='dist/css/portfolio_styles.min.css')
+    else
       //-<!-- build:css dist/css/portfolio_styles.min.css -->
       link(rel='stylesheet', href='public/components/bootstrap-sass/dist/css/bootstrap.min.css')
       link(rel='stylesheet', href='public/others/easybox/styles/default/easybox.min.css')
       link(rel='stylesheet', href='public/css/style.css')
       //-<!-- endbuild -->
-    else
-      link(rel='stylesheet', href='dist/css/portfolio_styles.min.css')
-
-    if settings.env === 'development'
+    if !process.env.NODE_ENV
     script(src='http://localhost:35729/livereload.js')
   body
     block content
-    if settings.env === 'development'
+    if process.env.NODE_ENV === 'production'
+      script(src='dist/js/portfolio_scripts.min.js');
+    else
       //-<!-- build:js dist/js/portfolio_scripts.min.js -->
       script(src='public/components/jquery/dist/jquery.min.js')
       script(src='public/components/mustache/mustache.js')
@@ -27,5 +28,3 @@ html(lang='en')
       script(src='public/js/template.js')
       script(src='public/js/portfolio.js')
       //-<!-- endbuild -->
-    else
-      script(src='dist/js/portfolio_scripts.min.js');
