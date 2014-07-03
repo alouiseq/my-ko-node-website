@@ -3,7 +3,7 @@ html(lang='en')
   head
     title= title
     meta(charset='utf-8')
-    if settings.env === 'development'
+    if process.env.NODE_ENV === 'development'
       //-<!-- build:css dist/css/home_styles.min.css -->
       link(rel='stylesheet', href='public/components/bootstrap-sass/dist/css/bootstrap.min.css')
       link(rel='stylesheet', href='public/css/style.css')
