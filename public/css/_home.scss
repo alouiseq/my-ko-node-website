@@ -1,0 +1,84 @@
+/**************** HOME ********************/
+#masked {
+  position: fixed;
+  width: 800px;
+  height: 600px;
+  left: 0%;
+  top: 85px;
+}
+
+.image_set {
+  position: relative;
+}
+
+#google > strong {
+  color: blue;
+}
+
+div#myname {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* Pad the edges of the mobile views a bit */
+.grids {
+}
+
+.grids {
+  padding-left: 15px;
+  padding-right: 15px;
+  .col-xs-4 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .col-lg-4 {
+    p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+/* Center align the text within the three rows */
+.grids {
+  .col-lg-4, .col-md-3, .col-sm-12, .col-xs-12 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-weight: normal;
+  }
+}
+
+.home {
+  p {
+    position: absolute;
+    z-index: 1;
+  }
+  strong {
+    color: white;
+  }
+}
+
+p.plain, p.animate {
+  left: 5%;
+  right: 5%;
+  bottom: 35%;
+}
+
+@mixin topNsize {
+  top: 40%;
+  font-size: xx-large;
+}
+
+.col-xs-4 {
+  p.animate {
+    @include topNsize;
+  }
+}
+p.animate {
+  strong {
+    @include topNsize;
+  }
+}

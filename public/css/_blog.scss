@@ -1,0 +1,36 @@
+/**************** BLOG ********************/
+
+/* Main column and sidebar layout */
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.blog-sidebar {
+  margin-top: 150px;
+}
+
+.spotlight{
+  display: block;
+  color: #000;
+  font-size: 125%;
+}
+
+/* Blog posts */
+.blog-post {
+  margin-bottom: 60px;
+}
+
+.blog-post-title {
+  border-bottom: thin dotted;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 50px;
+}
+
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}

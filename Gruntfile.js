@@ -43,9 +43,20 @@ module.exports = function (grunt) {
         }
       },
       jade: {
-        files: ['views/*.jade'],
+        files: ['views/*.jade', 'lib/todosMod/views/*.jade'],
         options: {
           livereload: reloadPort
+        }
+      },
+      sass: {
+        files: './public/css/style.scss',
+        tasks: 'sass:main' 
+      }
+    },
+    sass: {
+      main: {
+        files: {
+          'public/css/style.css' : 'public/css/style.scss'
         }
       }
     },

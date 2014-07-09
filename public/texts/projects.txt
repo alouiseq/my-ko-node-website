@@ -1,6 +1,6 @@
 todos = {
   title: "To Dos. ",
-  meta: "Simple To Dos App.",
+  meta: "Simple To Do App.",
   synopsis: "A to do list SPA application with daily tasks and projects lists to add, remove, edit, and sort entries in a simple and transparent fashion. A RESTful app that is driven by Javascript, jQuery, and Knockout.js on the client side, and Javascript, node.js, Express.js, and MongoDB on the server side. Markup includes HTML5 and CSS3 with Sass and Bootstrap."
 }
 

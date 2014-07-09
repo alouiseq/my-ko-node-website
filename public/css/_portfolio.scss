@@ -1,0 +1,43 @@
+/**************** PORTFOLIO ********************/
+#lg-img {
+  padding-top: 15px;
+}
+
+#work {
+  padding-bottom: 20px;
+}
+
+.nav-buttons {
+  @extend #work;
+  position: fixed;
+  right: 5%;
+}
+
+.pfolio, .proj {
+  padding: 15px 15px;
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+#resume {
+  @extend #work;
+  clear: both;
+  padding-top: 40px;
+}
+
+.col-lg-12 img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: content-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Games page */
+thead{
+  background-color: #c1c8c9;
+}
+.game_images{font-size: 1.5em;}

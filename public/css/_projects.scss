@@ -1,0 +1,18 @@
+/**************** PROJECTS ********************/
+/* Highlight first letter of each project */
+#project_list{
+  list-style-position: outside;
+  list-style-type: circle;
+}
+
+strong, .title_select { 
+  font-size: 15px; 
+}
+
+.row.hr-min {
+  margin-bottom: 0px;
+}
+
+.featurette-divider {
+  margin: 60px;
+}
