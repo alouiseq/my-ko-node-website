@@ -153,6 +153,9 @@ p.css-validated {
 .image_set {
   position: relative; }
 
+#role > strong {
+  color: FFC; }
+
 #google > strong {
   color: blue; }
 
@@ -160,6 +163,8 @@ div#myname {
   position: relative;
   text-align: center;
   color: black; }
+  div#myname h2 {
+    font-family: fantasy, Georgia, "Times New Roman", Times, serif; }
 
 /* Pad the edges of the mobile views a bit */
 .grids {

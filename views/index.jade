@@ -7,15 +7,15 @@ block content
       br
       div(id="masked")
         svg(class="transform", xmlns="http://www.w3.org/TR/SVG/", xmlns:xlink="http://www.w3.org/TR/xlink/", width="100%") 
-          image(xlink:href="/dist/images/ironman.png", width="100%", height="100%")
+          image(xlink:href="/dist/images/ironman-cartoon.jpg", width="100%", height="100%")
           mask(id="mask1")
             circle(cx="-50%", cy="-50%", r="50", fill="white")
-          image(xlink:href="/dist/images/me-ironman.png", mask="url(#mask1)", width="100%", height="100%")
+          image(xlink:href="/dist/images/me-iron-cartoon.jpg", mask="url(#mask1)", width="100%", height="100%")
 
       div(class="image_set")
         div(class="row")
           div(id="l1", class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-left")
-            p(class="plain") Alouise Quiatchon
+            p(id="role", class="plain") Front End Engineer
               br
               | Web Developer
             img(id="me", class="img-rounded", height="200", width="200", src="/dist/images/Alouise2.jpg", alt="Me")
