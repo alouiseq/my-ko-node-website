@@ -1,4 +1,4 @@
-// home module
+/* home module */
 var homeModule = (function () {
   return {
     masker: function () {
@@ -54,7 +54,7 @@ var homeModule = (function () {
   };
 })();
 
-// Run methods
+/* Run methods */
 homeModule.masker();
 homeModule.unmasker();
 homeModule.textstand();

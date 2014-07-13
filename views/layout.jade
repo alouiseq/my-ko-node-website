@@ -4,13 +4,12 @@ html(lang='en')
     title= title
     meta(charset='utf-8')
     if process.env.NODE_ENV === 'production'
-      link(rel='stylesheet', href='dist/css/home_styles.min.css')
+      link(rel='stylesheet', href='dist/css/main.min.css')
     else
-      //-<!-- build:css dist/css/home_styles.min.css -->
+      //-<!-- build:css dist/css/main.min.css -->
       link(rel='stylesheet', href='public/components/bootstrap-sass/dist/css/bootstrap.min.css')
       link(rel='stylesheet', href='public/css/style.css')
       //-<!-- endbuild -->
-    if !process.env.NODE_ENV
       script(src='http://localhost:35729/livereload.js')
   body
     block content

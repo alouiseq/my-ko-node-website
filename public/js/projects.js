@@ -1,4 +1,4 @@
-// projects module
+/* projects module */
 var projectsModule = (function () {
   return {
     display: function () {
@@ -20,5 +20,6 @@ var projectsModule = (function () {
   };
 })();
 
-// Usage:
+
+/* Usage */
 projectsModule.display();
