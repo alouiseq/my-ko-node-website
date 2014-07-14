@@ -30,7 +30,6 @@
     "commit": "4650af0ed2f3208248fb526391b57a602c92184a"
   },
   "_source": "git://github.com/knockout/knockout.git",
-  "_target": "~3.1.0",
-  "_originalSource": "knockoutjs",
-  "_direct": true
+  "_target": "*",
+  "_originalSource": "knockoutjs"
 }

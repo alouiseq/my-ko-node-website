@@ -8,7 +8,8 @@ module.exports = function (grunt) {
   // load all grunt tasks
   require('load-grunt-tasks')(grunt);
 
-  var reloadPort = 35729, files;
+  // var reloadPort = 35729, files;
+  var reloadPort = 1337, files;
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -31,7 +32,7 @@ module.exports = function (grunt) {
         tasks: ['develop', 'delayed-livereload']
       },
       js: {
-        files: ['public/js/*.js', 'lib/todosMod/**/*.js'],
+        files: ['public/js/*.js', 'lib/todosMod/js/*.js'],
         options: {
           livereload: reloadPort
         }
