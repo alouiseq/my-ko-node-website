@@ -5,6 +5,16 @@ block content
     div(class="masthead")
       div(class="container")
         nav(id="Projects", class="blog-nav")
+          noscript
+            a(class="blog-nav-item", href="/") Home
+            a(class="blog-nav-item", href="/blog") Blog
+            a(class="blog-nav-item", href="/portfolio") Portfolio
+            a(class="blog-nav-item active", href="/projects") Projects
+            a(class="blog-nav-item", href="/contacts") Contact Me
+
+    noscript
+      h4
+        em Enable Javascript to display all content on this page.
 
     div(class="container proj")
       div(class="row hr-min")
@@ -16,7 +26,7 @@ block content
           h2(class="featurette-heading")
             span(class="text-muted")
             a(href='/todos') Try Me 
-          p(class="lead") Testing in this area.
+          p(class="lead") Simple To Dos App.
         div(class="col-md-5")
           img(class="featurette-image img-responsive", src='public/img/todos.png', alt="To Dos")
 
@@ -26,7 +36,7 @@ block content
         div(id="mysite", class="col-md-7")
           h2(class="featurette-heading")
             span(class="text-muted")
-          p(class="lead") Testing in this area.
+          p(class="lead") Portfolio Website.
         div(class="col-md-5")
           img(class="featurette-image img-responsive", src='public/img/mysite.png', alt="My website")
 
@@ -38,10 +48,11 @@ block content
         div(id="familySite", class="col-md-7")
           h2(class="featurette-heading")
             span(class="text-muted")
-          p(class="lead") Testing in this area.
+          p(class="lead") Family Website.
 
       hr(class="featurette-divider")
 
     div(class="footer")
       div(class="blog-nav")
-      p(id="copyright") &#169;
+      p(id="copyright") &copy;
+        noscript &nbsp; Alouise Quiatchon

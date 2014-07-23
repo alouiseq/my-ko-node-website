@@ -1,6 +1,9 @@
 header, footer, section, article, aside, nav, hgroup {
   display: block; }
 
+html {
+  position: relative; }
+
 .wrapper {
   display: flex;
   display: -webkit-flex;
@@ -40,3 +43,16 @@ footer {
 
 footer div {
   margin-left: -50%; }
+
+.category div, .skill div {
+  display: inline-block;
+  width: 130px;
+  border: 1px solid black;
+  padding: 10px; }
+.category .lg, .skill .lg {
+  width: 200px; }
+.category .sm, .skill .sm {
+  width: 70px; }
+
+.category div {
+  background-color: FFFCCC; }

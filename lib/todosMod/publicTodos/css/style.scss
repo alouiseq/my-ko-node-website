@@ -69,3 +69,25 @@ footer {
     margin-left: -50%;
   }
 }
+
+// Skills & Experience section
+.category, .skill {
+  div {
+    display: inline-block;
+    width: 130px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .lg {
+    width: 200px;
+  }
+  .sm {
+    width: 70px;
+  }
+}
+
+.category {
+  div {
+    background-color: FFFCCC;
+  }
+}

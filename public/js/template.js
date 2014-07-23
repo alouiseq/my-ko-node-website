@@ -10,8 +10,7 @@ $.getJSON('public/texts/data.json', function(data){
   $("nav.blog-nav a:contains("+tabname+")").attr("class", "blog-nav-item active");
 
   // Add copyright info at the footer
-  var myRights = "{{copyright}}";
-  var myRights_html = Mustache.render(myRights, data);
+  var myRights_html = Mustache.render("{{copyright}}", data);
   $("#copyright").append(myRights_html);
 
 

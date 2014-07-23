@@ -5,6 +5,16 @@ block content
     div(class="masthead")
       div(class="container")
         nav(id="Contact", class="blog-nav")
+          noscript
+            a(class="blog-nav-item", href="/") Home
+            a(class="blog-nav-item", href="/blog") Blog
+            a(class="blog-nav-item", href="/portfolio") Portfolio
+            a(class="blog-nav-item", href="/projects") Projects
+            a(class="blog-nav-item active", href="/contacts") Contact Me
+
+    noscript
+      h4 
+        em Javascript is required to send a message
 
     div(class="container contact")
       div(class="head-msg")
@@ -32,4 +42,5 @@ block content
  
     div(class="footer")
       div(class="blog-nav")
-      p(id="copyright") &#169;
+      p(id="copyright") &copy;
+        noscript &nbsp; Alouise Quiatchon
