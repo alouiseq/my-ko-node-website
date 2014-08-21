@@ -36,33 +36,25 @@ block prepend content
               input(type="text", data-bind="value: entry, event: { keyup: editText }, visible: selected, hasFocus: selected")
             td
               div(class="glyphicon glyphicon-remove", data-bind="click: $parent.removeCell.bind($data, 'project', $parent)")
-  section(class="levels")
+  section
     h1 Skills & Experience
+    h3 Front End Engineer
     // Tableless items
-    div(class="category")
-      div(class="md") Basic Front End
-      div(class="lg") Notes
-      div(class="md") Exp
-      div(class="sm") Level
-      div(class="md") Expertise
-    div(class="skill")
-      div(class="md") Javascript
-      div(class="lg") MDN Javascript tutorial
-      div(class="md") 10/3000
-      div(class="sm") 2
-      div(class="md") 2 stars
-    div(class="skill")
-      div(class="md") HTML
-      div(class="lg") Read HTML5 elements
-      div(class="md") 20/3000
-      div(class="sm") 3
-      div(class="md") 3 stars
-    div(class="skill")
-      div(class="md") CSS3
-      div(class="lg") My website uses CSS3
-      div(class="md") 25/3000
-      div(class="sm") 3
-      div(class="md") 3 stars
+    div(class="rankingSystem", data-bind="foreach: skillSets")
+      div(class="category", data-bind="with: $data[0]")
+        div(class="md", data-bind="text: category")
+        div(class="lg") Recent
+        div(class="sm") EXP (of 1K)
+        div(class="sm") Level
+        div(class="md") Ranking
+      div(data-bind="foreach: $data")
+        div(class="skill")
+          div(class="md", data-bind="text: skill")
+          div(class="lg", data-bind="text: recent, click: viewTasks")
+          textarea(rows="10", cols="30", data-bind="text: taskList, visible: viewRecent, hasFocus: viewRecent")
+          div(class="sm", data-bind="text: exp")
+          div(class="sm", data-bind="text: level")
+          div(class="md", data-bind="text: ranking")
 
   footer(id="footer")
     div

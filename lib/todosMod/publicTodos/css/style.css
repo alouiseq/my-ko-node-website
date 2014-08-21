@@ -23,6 +23,7 @@ html {
 body {
   max-width: 1200px;
   margin: 0px auto;
+  text-align: center;
   padding: 0px 20px; }
 
 h1 {
@@ -39,20 +40,30 @@ td:last-child {
 footer {
   position: absolute;
   left: 50%;
-  bottom: 0px; }
+  bottom: -50px;
+  padding: 10px 0; }
 
 footer div {
   margin-left: -50%; }
 
-.category div, .skill div {
-  display: inline-block;
-  width: 130px;
-  border: 1px solid black;
-  padding: 10px; }
-.category .lg, .skill .lg {
-  width: 200px; }
-.category .sm, .skill .sm {
-  width: 70px; }
+.category, .skill {
+  display: -webkit-flex; }
+  .category div, .skill div {
+    border: 1px solid black;
+    padding: 10px; }
+  .category .lg, .skill .lg {
+    flex-basis: 200px;
+    flex-grow: 3; }
+  .category .md, .skill .md {
+    flex-basis: 130px;
+    flex-grow: 2; }
+  .category .sm, .skill .sm {
+    flex-basis: 70px;
+    flex-grow: 1; }
 
 .category div {
   background-color: FFFCCC; }
+
+textarea {
+  position: absolute;
+  left: 314px; }
