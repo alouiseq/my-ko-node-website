@@ -43,9 +43,9 @@ block prepend content
     div(class="rankingSystem", data-bind="foreach: skillSets")
       div(class="category", data-bind="with: $data[0]")
         div(class="md", data-bind="text: category")
-        div(class="lg") Recent
+        div(class="lg") Recent Entries
         div(class="sm") EXP (of 1K)
-        div(class="sm") Level
+        div(class="sm") Level (1-10)
         div(class="md") Ranking
       div(data-bind="foreach: $data")
         div(class="skill")
