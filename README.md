@@ -1,16 +1,12 @@
-Portfolio Website
+# Portfolio Website
+A personal website that details my resume, employment, previous/current projects, and demos.<br/>
+This site also serves as a playground to various new languages/technologies/tools I pick up along the way.
 
-A personal website that details my resume, employment, previous/current projects, and demos.
-The site also implements the owner's ongoing knowledge of web technologies and languages.
+### Version 2 (Current):
+Stack includes **Knockout.js** for the front end framework along with **Node/Express** backend and **MongoDB** for database. Deployed via **Heroku**.
 
-Version 1:
-Static website deployed in nearlyfreespeech.net
+### Version 1:
+Stack includes **Knockout.js** for the front end framework and **Django** on the back end. **SQlite** for the database and application deployed via **Heroku**. [github](https://github.com/alouiseq/my-ko-django-website)
 
-Version 2:
-Implemented on the backend with Python and Django with SQlite DB and deployed in Heroku
-
-Version 3 (Current):
-Converted to an Express/Node backend with MongoDB
-
-Languages/Technology:
-HTML, CSS, Javascript, jQuery, Jade, Node.js, Express.js, MongoDB, Mongoskin, Unix
+### Languages/Technology:
+HTML, CSS, Knockout.js, Javascript, jQuery, Jade, Node.js, Express.js, MongoDB, Mongoskin, Unix
